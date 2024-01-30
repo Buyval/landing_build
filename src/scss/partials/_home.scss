@@ -1,0 +1,135 @@
+.homePage {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 0 4rem;
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  @media screen and (max-width: 760px) {
+    padding: 0 1rem;
+  }
+  .home_sec {
+    width: 100%;
+    display: flex;
+    @media screen and (max-width: 991px) {
+      margin-top: 2rem;
+    }
+    .intro {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 500px;
+      width: 100%;
+      @media screen and (max-width: 991px) {
+        max-width: 600px;
+      }
+      @media screen and (max-width: 760px) {
+        max-width: unset;
+      }
+      h2 {
+        color: $primaryColor;
+        padding-top: 4rem;
+        font-size: clamp(1.7rem, 3vw, 2rem);
+        @media screen and (max-width: 991px) {
+          padding-top: 1rem;
+        }
+        @media screen and (max-width: 760px) {
+          text-align: center;
+        }
+      }
+      .introCont{
+        font-size: clamp(.8rem, 3vw, 1rem);
+        margin-bottom: -2rem;
+      }
+      .get {
+        display: flex;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: space-between;
+        .get_wrp{
+          display: flex;
+          gap: 1.5rem;
+          align-items: center;
+          flex-direction: column;
+          @media screen and (max-width: 760px) {
+            // margin-bottom: -2rem;        
+          }
+        .join{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+        .download {
+          display: flex;
+          gap: 1.5rem;
+          align-self: start;
+          @media screen and (max-width: 494px) {
+            gap: .5rem;
+          }
+          button {
+            border: none;
+            cursor: pointer;
+            img {
+              width: 120px;
+              @media screen and (max-width: 650px) {
+                width: 90px;
+              }
+              @media screen and (max-width: 494px) {
+                width: 80px;
+              }
+              @media screen and (max-width: 420px) {
+                width: 70px;
+              }
+            }
+          }
+        }
+        }
+        .char{
+          width: 300px;
+          display: none;
+          @media screen and (max-width: 760px) {
+            display: block;
+          }
+          @media screen and (max-width: 650px) {
+            width: 200px;
+          }
+          @media screen and (max-width: 494px) {
+            width: 150px;
+          }
+          @media screen and (max-width: 420px) {
+            width: 120px;
+          }
+        }
+      }
+    }
+    .images {
+      background-image: url("../../../public/L-page_assets/Rectangle.png");
+      width: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-top: 6rem;
+      @media screen and (max-width: 991px) {
+        width: 400px;
+        margin-top: 1rem;
+      }
+      @media screen and (max-width: 760px) {
+        display: none;
+      }
+      .adChar {
+        margin-left: 8rem;
+        @media screen and (max-width: 991px) {
+          margin-left: -1rem;
+        }
+      }
+    }
+  }
+}
+.alice-carousel img {
+  max-width: 100%;
+  height: auto;
+  // Add additional styling as needed
+}
