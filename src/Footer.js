@@ -55,7 +55,7 @@ function Footer() {
           </div>
         </div>
         <div className="cpr">
-          <p className="resvd">All Right Reserved 2024, Buyval.com</p>
+          <p className="resvd">All Right Reserved 2024, Buyval Integrated Business Limited</p>
           <p className="copyright">
             &copy;
             Developed by Klemweb
